@@ -29,6 +29,7 @@ class DefaultConfig:
         "auto_remove": True,
         "network_mode": "bridge",
         "docker_url": "tcp://docker-proxy:2375",
+        "extra_hosts": ["host.docker.internal:host-gateway"],
         "mounts": [
             # feature repo
             Mount(

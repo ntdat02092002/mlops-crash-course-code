@@ -4,3 +4,4 @@ mlflow==1.29.0
 pandas==1.4.4
 pyspark==3.0.1
 scikit-learn==1.1.2
+protobuf==4.23
