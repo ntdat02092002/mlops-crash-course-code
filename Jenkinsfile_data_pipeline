@@ -6,6 +6,15 @@ pipeline {
     }
 
     stages {
+        stage('Setup Git Config') {
+            steps {
+                script {
+                    // Thiết lập lệnh git config
+                    sh "git config --global --add safe.directory ${WORKSPACE}"
+                }
+            }
+        }
+
         stage('build data pipeline') {
             when {changeset "data_pipeline/**" }
 
